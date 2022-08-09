@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.toolbar)''
+        setSupportActionBar(binding.toolbar)
         binding.rvRepos.adapter = adapter
 
         viewModel.repos.observe(this) {
